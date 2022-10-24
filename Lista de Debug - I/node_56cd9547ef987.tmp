@@ -41,36 +41,16 @@ function somaItens(totalA, totalB){
 }
 console.log('Retorna o resultado da soma')
 console.log(somaItens('1','1'))
-
 function baterPonto(nome, numeroFicha){
     const funcionarios = ["Sônia", "Cage", "Alex", "Liu Ken"]
-    if(nome == funcionarios[numeroFicha]){
-        return "Turno processado"
-    }else{
-        return "Funcionario não cadastrado"
-    }
-}
-console.log(baterPonto('Sônia', 0))
-
-function loginSistema(nomeUsuario, senhaUsuario){
-    
-    const listaUsuarios = ["luffy123", "acer321", "nami"]
-
-    
-        if(nomeUsuario == 'luffy123'){
-            if(senhaUsuario === "326541"){
-                return "Acesso liberado"
-            }
-        }if(nomeUsuario == 'acer321'){
-            if(senhaUsuario === "741258"){
-                return "Acesso liberado"
-            }
-        }if(nomeUsuario == 'nami'){
-            if(senhaUsuario === "963258"){
-                return "Acesso liberado"
+ 
+        for (let i = 0; i < funcionarios.length; i++) {
+            for (let c = 0; nome.length; c++) {
+                console.log(funcionarios[numeroFicha[c]])
             }
         }
-
-     return 'Acesso Negado'
+        
+   
 }
-console.log(loginSistema("luffy123", 326541))
+
+console.log(baterPonto('alex', 2))
